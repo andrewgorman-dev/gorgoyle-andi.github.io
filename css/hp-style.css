@@ -1,0 +1,185 @@
+@font-face {
+  font-family: "ubuntu";
+  src: url("../fonts/ubuntu-font-family-0.80/Ubuntu-L.ttf");
+}
+
+@viewport {
+  zoom: 1;
+  width: extend-to-zoom;
+}
+
+/* Portfolio Grid Styles*/
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* margin: 6px; */
+}
+
+.grid-item {
+  position: relative;
+}
+
+.grid-image-background {
+  height: 360px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.image-text {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding-left: 90px;
+  padding-right: 90px;
+  font-family: ubuntu;
+}
+
+.text-link-1 p {
+  font-size: 0.8em;
+}
+
+#dk-logo {
+  width: 52%;
+  padding: 0.3rem;
+  opacity: 0.7;
+}
+
+#cloud-logo {
+  opacity: 0.8;
+  width: 42%;
+}
+
+#film-logo {
+  border-radius: 50%;
+  opacity: 0.5;
+  width: 50%;
+}
+
+#lmn-logo {
+  opacity: 0.5;
+  width: 45%;
+}
+
+#lamp-logo {
+  opacity: 0.6;
+  width: 50%;
+}
+
+#research-logo {
+  width: 50%;
+}
+
+#teach-logo {
+  opacity: 0.8;
+  width: 40%;
+}
+
+/* Grid s except 5 */
+.grid-logo-1 img {
+  width: 60%;
+  margin-bottom: 20px;
+}
+
+#icon-green {
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.image-text .subtitle .text-link-1 a {
+  transition: 1s;
+  font-weight: 500;
+  color: transparent;
+}
+
+.image-text:hover .subtitle .text-link-1 a {
+  font-weight: bolder;
+  font-size: larger;
+  font-variant: normal;
+  color: rgb(187, 150, 150);
+}
+
+/* Grid 5 Text Only */
+.grid-logo img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.grid-logo img:hover {
+  cursor: pointer;
+}
+
+.image-text .subtitle {
+  transition: 1s;
+  font-weight: 900;
+  font-size: large;
+  color: transparent;
+}
+
+.image-text:hover .subtitle {
+  font-weight: bold;
+  font-size: large;
+  font-variant: normal;
+  color: #89dbce;
+  cursor: pointer;
+}
+
+.text-only {
+  padding: 0;
+  margin-top: 0;
+}
+
+#icon-green {
+  width: 80%;
+  padding: 0.3em;
+  opacity: 0.8;
+}
+
+/* IMG-DARKEN for Script call */
+.img-darken {
+  transition: 1.3s;
+  filter: brightness(16%);
+}
+
+@media all and (max-width: 680px) {
+  /* nav {
+    overflow-x: hidden;
+  } */
+
+  .portfolio-grid {
+    /* overflow-x: hidden; */
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .grid-logo-1 img {
+    width: 40%;
+    margin-bottom: 20px;
+  }
+
+  .grid-logo img {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+
+  #dk-logo {
+    width: 60%;
+  }
+}
+
+@media all and (min-width: 1720px) {
+  .grid-image-background {
+    min-height: 38em;
+    min-width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}

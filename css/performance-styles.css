@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: ubuntu;
+  background-color: #b48d79;
+}
+
+.anchor1 {
+  position: relative;
+}
+
+.anchor1 a {
+  text-decoration: none;
+  color: rgb(94, 39, 146);
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-shadow: 0rem 0.4rem 1rem rgba(0, 3, 123, 0.7);
+}
+
+.anchor1 a:hover {
+  color: aliceblue;
+}
+
+.anchor2 {
+  position: relative;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.anchor2 a {
+  text-decoration: none;
+  color: rgb(94, 39, 146);
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-shadow: 0rem 0.4rem 1rem rgba(0, 3, 123, 0.7);
+}
+
+.anchor2 a:hover {
+  color: aliceblue;
+}
+
+@media all and (max-width: 690px) {
+  .audio-container {
+    min-width: 92vw;
+  }
+
+  #song-img {
+    min-width: 82%;
+    margin-bottom: 0.3em;
+    border-radius: 8%;
+    opacity: 0.9;
+  }
+
+  .level {
+    width: 80vw;
+    height: 0.3em;
+    margin: 0;
+  }
+
+  .audio-container .buttons {
+    min-width: 100%;
+    margin: 0;
+  }
+
+  #prev,
+  #next {
+    min-width: 60%;
+    /* padding: 0.1em 1.4em; */
+  }
+
+  #play {
+    min-width: 76%;
+  }
+}
+
+/* Audio Player Styles */
+.audio-container {
+  padding: 1em;
+  margin: 5.6em auto;
+  width: 62%;
+  height: 40%;
+  border-radius: 8%;
+  background-image: linear-gradient(180deg, #90b3a7 23.8%, #599e8f 92%);
+  box-shadow: 5px 5px 11px #a8c5c3, -5px -5px 11px #b6ccc6;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.audio-container h1 {
+  font-size: 1.6em;
+  color: rgb(220, 205, 233);
+  font-size: 36px;
+  text-align: center;
+  padding-top: 0.4em;
+  padding-bottom: 0.1em;
+  text-shadow: 0 0.3rem 0.5rem rgba(7, 70, 38, 0.5);
+}
+
+.audio-container h3 {
+  font-size: 1.1em;
+  color: rgb(208, 204, 212);
+  padding-bottom: 0.1em;
+  text-shadow: 0 0.3rem 0.5rem rgba(7, 70, 38, 0.45);
+}
+
+/* AUTOMATE display WITH JS */
+.audio-container h4 {
+  font-size: 1em;
+  padding: 1em;
+  color: rgb(231, 223, 238);
+}
+
+.audio-container img {
+  width: 60%;
+  margin-bottom: 0.2em;
+  border-radius: 8px;
+}
+
+/* AUTOMATE src WITH JS */
+#song-img {
+  margin: 1.6em auto;
+  box-shadow: 2px 2px 5px #a8c5c3;
+  width: 72%;
+  border-radius: 10px;
+}
+
+/* Custom the range input */
+.level {
+  width: 80%;
+  height: 4px;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #dde7e4;
+  box-shadow: 5px 5px 11px #a8c5c3, -5px -5px 11px #a1b6b0;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.level::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: #a1b6b0;
+  box-shadow: 2px 2px 5px #a8c5c3, -2px -2px 5px #a1b6b0;
+  width: 14px;
+  height: 14px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.audio-container .buttons {
+  margin-top: 1.8em;
+  margin-bottom: 1.4em;
+  padding: 1.2em;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+}
+
+#prev,
+#next {
+  cursor: pointer;
+  width: 52%;
+  padding: 0.5em;
+}
+
+#play {
+  cursor: pointer;
+  width: 68%;
+  padding: 0.3em;
+}
+
+.buttons img:active {
+  background-color: #448b81;
+  box-shadow: 2px 2px 5px #a8c5c3, -2px -2px 5px #a1b6b0;
+  border-radius: 25%;
+}

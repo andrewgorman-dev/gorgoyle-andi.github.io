@@ -1,0 +1,213 @@
+@font-face {
+  font-family: "ubuntu";
+  src: url("../fonts/ubuntu-font-family-0.80/Ubuntu-L.ttf");
+}
+
+/* This wildcard call is also in nav-styles and contact-styles is this necessary ??  */
+footer * {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.main-body {
+  display: flex;
+  justify-content: flex-end;
+  /* align-items: center; */
+  min-height: 100vh;
+  flex-direction: column;
+  background: #ede7f6;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 50px 100px;
+  background: rgb(49, 5, 184);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+footer .footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+  font-family: ubuntu;
+  font-size: small;
+  /* align-items: center; */
+}
+
+footer .footer-container .sec {
+  margin-right: 30px;
+}
+
+footer .footer-container .sec.about-tuition {
+  width: 40%;
+  text-align: justify;
+}
+
+.sec.about-tuition p {
+  font-size: 11px;
+}
+
+footer .footer-container h3 {
+  position: relative;
+  color: #edb;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+footer .footer-container h3:before {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background: #f00;
+}
+
+footer p {
+  color: #999;
+}
+
+.sci {
+  margin-top: 10px;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.sci li {
+  list-style: none;
+}
+
+.sci li a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: #15bb5a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 66%;
+  margin-right: 10px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.sci li a img {
+  transform: translate(2px, 2px);
+}
+
+.sci li a:hover {
+  background: #268;
+}
+
+.sec.quickLinks {
+  margin-bottom: 20px;
+}
+
+.quickLinks {
+  position: relative;
+  width: 25%;
+}
+
+.quickLinks ul li {
+  list-style: none;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.quickLinks ul li a {
+  color: #777;
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.quickLinks ul li a:hover {
+  color: aquamarine;
+}
+
+.contact {
+  width: calc(35% - 60px);
+  margin-right: 0 !important;
+}
+
+.contact .info {
+  position: relative;
+}
+
+.contact .info li {
+  display: flex;
+  margin-bottom: 16px;
+  color: #777;
+  font-size: 13px;
+  font-weight: bold;
+  margin-right: 10px;
+  /* flex-wrap: wrap; */
+}
+
+.contact .info li a {
+  color: #777;
+}
+
+.contact .info li a:hover {
+  color: aquamarine;
+}
+
+.contact .info li img {
+  border-radius: 8px;
+}
+
+.contact .info li img:hover {
+  height: 140px;
+  width: 102px;
+}
+
+.copyrightText {
+  width: 100%;
+  background: #15bb5a;
+  font-family: ubuntu;
+  font-weight: bolder;
+  padding: 8px 100px;
+  text-align: center;
+  color: rgb(31, 15, 78);
+}
+
+@media (max-width: 991px) {
+  footer {
+    padding: 40px;
+  }
+  .footer .footer-container {
+    flex-direction: column;
+  }
+  .footer .footer-container .sec {
+    margin-right: 0px;
+    margin-bottom: 40px;
+    color: #777;
+  }
+  .footer .footer-container .sec {
+    width: 100vw;
+  }
+  .quickLinks {
+    margin-top: 18px;
+  }
+  .footer .footer-container .sec.about-tuition,
+  .quickLinks,
+  .contact {
+    width: 100%;
+  }
+
+  footer .footer-container .sec.about-tuition {
+    width: 80vw;
+    text-align: justify;
+  }
+  .copyrightText {
+    padding: 8px 40px;
+  }
+}
+/* Space between when columns!! */

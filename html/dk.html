@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" href="../icons/play-icon-color-scaled.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/dk-styles.css" />
+    <link rel="stylesheet" href="../css/nav-styles.css" />
+    <link rel="stylesheet" href="../css/footer-styles.css" />
+    <title>AG DK</title>
+  </head>
+  <body>
+   <!-- NAV-BAR -->
+   <nav>
+    <div class="logo">
+      <img src="../icons/play-icon-color.png" height="75" alt="AG-logo" />
+      <div class="logo-text">
+        <h4>Andrew Gorman</h4>
+        <p>Mathmusician, Educator,</p>
+        <p>Composer</p>
+      </div>
+    </div>
+    <!-- ul + li = unordered bulleted list -->
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="performance.html">Performance</a></li>
+      <li><a href="film-music.html">Composer</a></li>
+      <!-- <li><a href="pages/html/code.html">Code</a></li> -->
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
+    <!-- TALE OF KIPPER !!! -->
+    <div class="dk-header">
+      <h1>A Kipper's Tale: My Musical Start-Up</h1>
+      <p><a href="#music-player">Listen to DK</a></p>
+    </div>
+    <div class="dk-story-container">
+      <article>
+          <section>
+            <img src="../images/dk-images/live-and-local-press-poster.jpg" alt="Roseroom L&L Poster">
+            <p>Having discovered a couple of heroic klezmorim, Tim Karp and Daniel Gouly at jam sessions during my masters studies
+              I resolved to form a band to explore klezmer music and an array of related styles from which this rich genre draws influence. 
+              The goal was to put the music first, to come together regularly to play and arrange the music allowing our own
+              experience to guide us toward original interpretations. After meeting a groove-mad Devonshire bassist, Jamie Benzies 
+              during my brief but highly educational season with London's finest Samba collective, "Rhythms of the City", our original
+              4-piece line up was complete. We played our first gig at a (pretty kitsch) Arabian-night-themed event at the swanky Dorchester
+              hotel on Park Lane in London.
+            </p>
+            <p>Soon thereafter Jamie brought his housemate (and by 'house' I mean amazing former pub right in the heart of the city) 
+              and partner-in-groove Tim Doyle in to play drums and thereby took Don Kipper to a new level of potential for combining
+              exciting beats with our growing repertoire of melodies</p>
+            <p>After crashing his house party on my birthday in 2012 I found myself face to face with the inimitable 
+              accordionist, Josh Middleton whose bedroom already told the tale of a most singular minstrel destined for rare greatness. A few days later
+              we were jamming in my bedroom and the deal was sealed. Don Kipper was now a sextet.</p>
+              <img src="../images/dk-images/dk-fidels-gastro.jpeg" alt="fidels gastro">
+            <p>For nearly a year Don Kipper was largely an instrumental venture. Although we did love singing we often lacked
+              the pronunciation skills for the relevant languages to our chosen styles.
+              On the lookout for a fitting singer we trialed many an exciting vocalist but somehow things never clicked. 
+              That was until one balmy night at the legendary Jamboree venue down cable street ways. The gem of the Limehouse basin.
+              That evening during our break between sets I felt a magnetic force drawing me towards a young man and a shy-looking lady.
+              Greek? And Serbian? Knows all our music and loves to sing?! Could there ever have been a clearer candidate for sitting in on a rehearsal?
+              That was Wednesday evening. By Friday lunchtime Dunja Botic was the singer and seventh member of Don Kipper. 
+              By Sunday night it felt like she'd been in the band for years. We were finally complete.</p>
+            <p> Having produced, recorded and released their <a href="https://donkipper.bandcamp.com/album/don-kipper" target="_blank">self-titled first album</a> Don Kipper toured Europe performing in festivals and venues and gained international recogition winning a Klezmer 
+              competition in Munich in 2015. <img src="../images/dk-images/dk-theAlbum.jpg" alt="Dk The Album">
+            </p>
+            <p>After a period of touring Don Kipper returned to the studio (otherwise known as Tim's bedroom) to record the 
+              <a href="https://donkipper.bandcamp.com/album/krisalis" target="_blank">Krisallis EP</a> that featured some of their first fully-original material.
+              <img src="../images/dk-images/Krisallis-art.jpg" alt="Krisallis Cover"></p>
+            <p>In the summer of 2018 Kipper signed with Riverboat Records to produce their third album <a href="https://www.donkipper.com/new-album-seven-sisters" target="_blank">Seven Sisters</a>, 
+              a personal and intimate homage to the band's home in north-east London. <img src="../images/dk-images/Welcome.jpg" alt="Seven Sisters Cover">
+            </p>
+            <p>In 2019 on the Croatian Island, Vis I parted ways with my first metaphorical baby, Don Kipper to concentrate on raising my 
+              first biological baby, Vincent in my new home, Vienna. 
+            </p>
+          </section> 
+      </article>
+    </div>
+    
+    
+    <!-- MUSIC-PLAYER -->
+    <div class="player-body" id="music-player">
+      <h2>Don Kipper Record Player</h2>
+      <h3>[A Handful of Originals. Purchase the full album <a href="https://worldmusic.net/products/seven-sisters" target="_blank">HERE</a> ]</h3>
+      <div class="music-container">
+        <div class="music-info">
+          <h4 id="title">Welcome</h4>
+          <div class="progress-container">
+            <div class="progress"></div>
+          </div>
+        </div>
+        <audio src="../audio/dk-audio/Welcome.mp3" id="audio"></audio>
+        <div class="img-container">
+          <img
+            src="../images/dk-images/Welcome.jpg"
+            alt="7sis-cover"
+            id="cover"
+          />
+        </div>
+        <div class="navigation">
+          <button id="prev" class="action-btn">
+            <i class="fas fa-backward"></i>
+          </button>
+          <button id="play" class="action-btn action-btn-big">
+            <i class="fas fa-play"></i>
+          </button>
+          <button id="next" class="action-btn">
+            <i class="fas fa-forward"></i>
+          </button>
+        </div>
+      </div>
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-container">
+        <div class="sec about-tuition">
+          <h3>About Andrew</h3>
+          <p>
+            I am a life-long learner. The art of learning has become as much a
+            passion as the various disciplines to which I have had the privilege
+            to apply it. My own path has led me through mathematics and
+            languages to jazz improvisation, composition and, most recently,
+            learning to code. The progression however has not necessarily been
+            linear. The connections discovered at a deep level build bridges
+            through time allowing for a multidimensional standpoint. I believe
+            that good teachers are able to draw on their own personal experience
+            of learning but are unwise to be bound by it. In reality, a good
+            teacher must learn how to teach each student as much as the student
+            is obliged to discover a teacher's secrets. I have lived, learned,
+            made mistakes and improved my various models for learning through
+            tinkering and experimentation. I appreciate mathematics for its
+            noble attempt to explain the wonders of the universe and for its
+            countless practical applications but even more so for its power to
+            sharpen our minds. I respect languages for the insight they offer
+            into humanity and cultures. I love music for how it makes me feel. I
+            would enjoy helping anyone who wishes to make progress in any of
+            these fields. I myself am currently learning to code. As I do so I
+            can immediately identify parallels between programming, music and
+            languages. When we learn to improvise in a style we begin by
+            learning phrases and sounds just as the linguist learns at first and
+            similarly to how programmers learn the functions and operators of
+            the various languages.
+          </p>
+        </div>
+        <!-- QUICK LINKS -->
+        <div class="sec quickLinks">
+          <h3>Quick Links</h3>
+          <ul>
+            <li>
+              <a
+                href="../documents/AG-CV-2021.pdf"
+                download="A.Gorman Curriculum Vitae"
+                >Download CV</a
+              >
+            </li>
+            <li>
+              <a
+                href="../documents/Lebenslauf-AG.pdf"
+                download="A.Gorman-Lebenslauf"
+                >Lebenslauf Herunterladen (DE)</a
+              >
+            </li>
+            <li>
+              <a
+                href="../documents/AG-Thesis4Website.pdf"
+                download="AG-Thesis"
+                >Download Thesis</a
+              >
+            </li>
+            <li>
+              <a href="https://www.donkipper.com" target="_blank"
+                >Don Kipper Website</a
+              >
+            </li>
+
+            <li><a href="about.html">Bio</a></li>
+            <li><a href="friends.html">Friends</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="4k.html">Fourchestra</a></li>
+          </ul>
+          <!-- SOCIAL ICONS -->
+          <div class="sec icons">
+            <ul class="sci">
+              <li>
+                <a
+                  href="https://www.youtube.com/channel/UCFJL1WAnwVmskre1SnYJYqA"
+                  target="_blank"
+                  ><img
+                    src="../icons/social/youtube-icon-3.png"
+                    height="36"
+                    alt="utube"
+                /></a>
+              </li>
+              <li>
+                <a href="https://github.com/gorgoyle-andi" target="_blank"
+                  ><img
+                    src="../icons/social/git-icon.png"
+                    height="36"
+                    alt="git"
+                /></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/andrew-gorman-2153bb211/"
+                  target="_blank"
+                  ><img
+                    src="../icons/social/linkedin-icon-2.png"
+                    height="36"
+                    alt="linkedin"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- CONTACT INFO -->
+        <div class="sec contact">
+          <h3>Contact Info</h3>
+          <ul class="info">
+            <li>
+              <a href="mailto:adornwarngem@gmail.com" target="_blank">Email</a>
+            </li>
+            <li>
+              <a href="mailto:andrewgorman@hotmail.co.uk" target="_blank"
+                >Email (for Tuition following English Curriculum)</a
+              >
+            </li>
+            <li>Tel: +43(0)6602603157</li>
+            <li>
+              <a
+                href="https://www.keystonetutors.com/tutors/294-andrew"
+                target="_blank"
+                >Keystone Tutor Profile</a
+              >
+            </li>
+            <li>
+              <img
+                src="../images/me-pics/Keystone-portrait-2021.jpg"
+                height="88"
+                alt="Keystone-portrait-2021"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="copyrightText">
+      <p>Don't learn to play. Play to learn.</p>
+      <p>© 2021 Andrew Gorman</p>
+    </div>
+    <script src="../js/dk-script.js"></script>
+    <script src="../js/nav-script.js"></script>
+  </body>
+</html>

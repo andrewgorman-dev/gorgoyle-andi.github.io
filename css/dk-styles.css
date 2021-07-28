@@ -1,0 +1,289 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: ubuntu;
+}
+
+/* Tale of Kipper Styles */
+.dk-header {
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(23.8%, #a1b6b0), color-stop(92%, #6eafa1));
+  background-image: linear-gradient(0deg, #a1b6b0 23.8%, #6eafa1 92%);
+  min-height: 9vh;
+  padding: 32px;
+  text-align: center;
+  color: #e3e8ec;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-shadow: 0rem 0.4rem 1rem rgba(0, 3, 123, 0.7);
+}
+
+.dk-header h1 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.dk-header p {
+  padding: 1.4rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.dk-header a {
+  text-decoration: none;
+  color: #7e2b92;
+}
+
+.dk-header a:hover {
+  color: #eee6f0;
+}
+
+.dk-story-container {
+  padding: 1em;
+  height: 50%;
+  background: #ceb999;
+}
+
+.dk-story-container article h3 {
+  color: #dfe3e7;
+  padding-left: 0.3em;
+}
+
+.dk-story-container article {
+  padding: 0.5em;
+  border-radius: 18px;
+}
+
+.dk-story-container p {
+  padding: 0.3em;
+}
+
+.dk-story-container a {
+  color: #081d5c;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.dk-story-container a:hover {
+  color: #e4cee9;
+}
+
+section img {
+  width: 100%;
+  margin: 1em 0 0;
+  padding: 0.3em;
+  border-radius: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .dk-header {
+    min-height: 10vh;
+  }
+  .dk-header p {
+    padding: 1.1rem;
+  }
+  .dk-header a {
+    text-decoration: none;
+  }
+  .dk-story-container {
+    padding: 0.5em;
+  }
+  article {
+    padding: 0;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(24%, #9d6eaf), color-stop(92%, #b0a1b6));
+    background-image: linear-gradient(0deg, #9d6eaf 24%, #b0a1b6 92%);
+  }
+  .dk-story-container p {
+    text-align: left;
+    font-size: 15px;
+    line-height: 1.6em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  .dk-story-container section {
+    -webkit-column-count: 3;
+            column-count: 3;
+    -webkit-column-rule-style: solid;
+            column-rule-style: solid;
+    -webkit-column-rule-color: #062717;
+            column-rule-color: #062717;
+  }
+  .dk-story-container section > * {
+    margin-top: 0;
+  }
+  h2 {
+    font-size: 2rem;
+    margin: 1em 0 0em;
+  }
+}
+
+/* DK RECORD PLAYER STYLES */
+.player-body {
+  height: 50%;
+  margin: 0;
+  font-family: ubuntu-r;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(23.8%, #a1a6b6), color-stop(92%, #6e7faf));
+  background-image: linear-gradient(0deg, #a1a6b6 23.8%, #6e7faf 92%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.player-body h2 {
+  padding: 0.5em;
+}
+
+/* margin here controls title distance from player */
+.music-container {
+  background-color: aliceblue;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 20px 20px 0 #394055;
+          box-shadow: 0 20px 20px 0 #394055;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 30px;
+  position: relative;
+  margin: 64px 0;
+  z-index: 10;
+}
+
+.img-container {
+  position: relative;
+  width: 110px;
+}
+
+.img-container img {
+  width: inherit;
+  height: 110;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-animation: rotate 18s linear infinite;
+          animation: rotate 18s linear infinite;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.music-container.play .img-container img {
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(720deg);
+            transform: rotate(720deg);
+    /* rotate to degrees multiples of 360 for multiple turns */
+  }
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(720deg);
+            transform: rotate(720deg);
+    /* rotate to degrees multiples of 360 for multiple turns */
+  }
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1;
+}
+
+.action-btn {
+  background-color: aliceblue;
+  border: 0;
+  color: #b3a5b3;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px;
+  margin: 0 20px;
+}
+
+.action-btn-big {
+  color: #9e889e;
+  font-size: 30px;
+}
+
+.action-btn:focus {
+  outline: 0;
+}
+
+/* White circle issue here */
+.music-info {
+  background-color: rgba(190, 194, 199, 0.3);
+  border-radius: 15px 15px 0 0;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: calc(100% - 40px);
+  /* N.B spaces within calculation necessary!!  */
+  padding: 10px 10px 10px 150px;
+  opacity: 0;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  -webkit-transition: opacity 0.3s ease-in, -webkit-transform 0.3s ease-in;
+  transition: opacity 0.3s ease-in, -webkit-transform 0.3s ease-in;
+  transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+  transition: transform 0.3s ease-in, opacity 0.3s ease-in, -webkit-transform 0.3s ease-in;
+}
+
+/* red green blue (alpha - defines opacity 0<a<1) */
+.music-info h4 {
+  margin: 0;
+}
+
+.music-container.play .music-info {
+  opacity: 1;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.progress-container {
+  background-color: antiquewhite;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0px;
+  height: 4px;
+  width: 100%;
+}
+
+.progress {
+  background-color: #582330;
+  border-radius: 5px;
+  height: 100%;
+  width: 0%;
+  -webkit-transition: width 0.1s linear;
+  transition: width 0.1s linear;
+}
+/*# sourceMappingURL=dk-styles.css.map */

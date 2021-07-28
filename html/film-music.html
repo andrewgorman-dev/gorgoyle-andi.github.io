@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../icons/play-icon-color-scaled.png" />
+    <link rel="stylesheet" href="../css/nav-styles.css" />
+    <link rel="stylesheet" href="../css/footer-styles.css" />
+    <link rel="stylesheet" href="../css/film-styles.css" />
+    <link rel="stylesheet" href="../css/utube-gallery-styles.css" />
+    <title>AG Composition</title>
+  </head>
+  <body>
+    <!-- NAV-BAR -->
+    <nav>
+      <div class="logo">
+        <img src="../../icons/play-icon-color.png" height="75" alt="AG-logo" />
+        <div class="logo-text">
+          <h4>Andrew Gorman</h4>
+          <p>Mathmusician, Educator,</p>
+          <p>Composer</p>
+        </div>
+      </div>
+      <!-- ul + li = unordered bulleted list -->
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="performance.html">Performance</a></li>
+        <li><a href="film-music.html">Composer</a></li>
+        <!-- <li><a href="pages/html/code.html">Code</a></li> -->
+        <!-- <li><a href="../html/past-projects.html">Projects</a></li> -->
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+    <!-- MAIN BODY -->
+    <div class="page-header">
+      <h1>Music for Stage and Screen</h1>
+    </div>
+    <div class="anchor1">
+      <a href="#video-anchor">To Video</a>
+    </div>
+    <!-- SIDE BY SIDE AUDIO PLAYERS -->
+    <div class="sbs-audio-container" id="audio-anchor">
+      <div class="player-container1">
+        <h1>The Shoemaker and the Boy Suite</h1>
+        <p>
+          A short five-movement suite compiled from my score to the short film,
+          <i>"The Shoemaker and the Boy"</i>
+        </p>
+        <img
+          src="../images/me-pics/andi-guitar.jpeg"
+          alt=""
+          id="master-img"
+        />
+        <!-- ADD PLAY CLASS HERE DYNAMICALLY -->
+        <div class="music-container1">
+          <div class="music-info1">
+            <h4 id="title1">I - The Boy</h4>
+            <div class="progress-container1" id="progress-container1">
+              <div class="progress1" id="progress1"></div>
+            </div>
+          </div>
+
+          <audio
+            src="../audio/shoemaker-suite/I - The Boy.mp3"
+            id="audio1"
+          ></audio>
+          <div class="img-container1">
+            <img
+              src="../icons/records/shoemaker-rec/I - The Boy.png"
+              alt="The Boy"
+              id="cover1"
+            />
+          </div>
+          <div class="navigation1">
+            <div class="action-btn">
+              <img src="../icons/Rwd-icon-scaled.png" id="prev1" alt="" />
+            </div>
+
+            <div class="action-btn action-btn-big">
+              <img
+                src="../icons/play-icon-color-orange-scaled.png"
+                id="play1"
+                alt=""
+              />
+            </div>
+
+            <div class="action-btn">
+              <img src="../icons/Fwd-icon-scaled.png" id="next1" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- PLAYER 2 -->
+      <div class="player-container2">
+        <h1>Selected Compositions</h1>
+        <p>
+          A short collection of compositions from collaborations with film and
+          theatre artists.
+        </p>
+        <img
+          src="../images/film-player-images/Tango for the Road Not Taken.jpg"
+          alt=""
+          id="master-img2"
+        />
+        <!-- ADD PLAY CLASS DYNAMICALLY HERE -->
+        <div class="music-container2">
+          <div class="music-info2">
+            <h4 id="title2">Tango for the Road Not Taken</h4>
+            <div class="prog-cont2">
+              <div class="progress2"></div>
+            </div>
+          </div>
+          <audio
+            src="../audio/film-music/Tango for the Road Not Taken.mp3"
+            id="audio2"
+          ></audio>
+          <div class="img-container2">
+            <img
+              src="../icons/records/film-player-records/Tango for the Road Not Taken.png"
+              alt=""
+              id="record2"
+            />
+          </div>
+          <div class="navigation2">
+            <div class="action-btn2">
+              <img
+                src="../icons/Rwd-icon-blue-scaled.png"
+                alt=""
+                id="prev2"
+              />
+            </div>
+            <div class="action-btn2 action-btn2-bigger">
+              <img
+                src="../icons/play-icon-color-turquoise-scaled.png"
+                alt=""
+                id="play2"
+              />
+            </div>
+            <div class="action-btn2">
+              <img
+                src="../icons/Fwd-icon-blue-scaled.png"
+                alt=""
+                id="next2"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- VIDEO GALLERY -->
+    <div class="performance-container" id="video-anchor">
+      <div class="gallery-container">
+        <div class="gallery-heading">Selected Film Scores</div>
+        <div class="video-container" id="gallery">
+          <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/AqpsRfyZPYM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video"></iframe>
+          </div>
+          <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0OVZwWSPcZg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video"></iframe>
+          </div>
+          <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/th0ORfMIzc0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video"></iframe>
+          </div>
+          <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/95iYOCx5Vz8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video"></iframe>
+          </div>
+          <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/UdQ-SiFmR_o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video"></iframe>
+          </div>
+          <!-- <div class="video">
+            <video src="../../video/film-score/Tanzspiel Montage.mp4"></video>
+          </div> -->
+        </div>
+        </div>
+      </div>
+      <div class="anchor2">
+        <a href="#audio-anchor">To Audio</a>
+      </div>
+    </div>
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-container">
+        <div class="sec about-tuition">
+          <h3>About Andrew</h3>
+          <p>
+            I am a life-long learner. The art of learning has become as much a
+            passion as the various disciplines to which I have had the privilege
+            to apply it. My own path has led me through mathematics and
+            languages to jazz improvisation, composition and, most recently,
+            learning to code. The progression however has not necessarily been
+            linear. The connections discovered at a deep level build bridges
+            through time allowing for a multidimensional standpoint. I believe
+            that good teachers are able to draw on their own personal experience
+            of learning but are unwise to be bound by it. In reality, a good
+            teacher must learn how to teach each student as much as the student
+            is obliged to discover a teacher's secrets. I have lived, learned,
+            made mistakes and improved my various models for learning through
+            tinkering and experimentation. I appreciate mathematics for its
+            noble attempt to explain the wonders of the universe and for its
+            countless practical applications but even more so for its power to
+            sharpen our minds. I respect languages for the insight they offer
+            into humanity and cultures. I love music for how it makes me feel. I
+            would enjoy helping anyone who wishes to make progress in any of
+            these fields. I myself am currently learning to code. As I do so I
+            can immediately identify parallels between programming, music and
+            languages. When we learn to improvise in a style we begin by
+            learning phrases and sounds just as the linguist learns at first and
+            similarly to how programmers learn the functions and operators of
+            the various languages.
+          </p>
+        </div>
+        <!-- QUICK LINKS -->
+        <div class="sec quickLinks">
+          <h3>Quick Links</h3>
+          <ul>
+            <li>
+              <a
+                href="../documents/AG-CV-2021.pdf"
+                download="A.Gorman Curriculum Vitae"
+                >Download CV</a
+              >
+            </li>
+            <li>
+              <a
+                href="../documents/Lebenslauf-AG.pdf"
+                download="A.Gorman-Lebenslauf"
+                >Lebenslauf Herunterladen (DE)</a
+              >
+            </li>
+            <li>
+              <a
+                href="../documents/AG-Thesis4Website.pdf"
+                download="AG-Thesis"
+                >Download Thesis</a
+              >
+            </li>
+            <li>
+              <a href="https://www.donkipper.com" target="_blank"
+                >Don Kipper Website</a
+              >
+            </li>
+
+            <li><a href="about.html">Bio</a></li>
+            <li><a href="friends.html">Friends</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="4k.html">Fourchestra</a></li>
+          </ul>
+          <!-- SOCIAL ICONS -->
+          <div class="sec icons">
+            <ul class="sci">
+              <li>
+                <a
+                  href="https://www.youtube.com/channel/UCFJL1WAnwVmskre1SnYJYqA"
+                  target="_blank"
+                  ><img
+                    src="../../icons/social/youtube-icon-3.png"
+                    height="36"
+                    alt="utube"
+                /></a>
+              </li>
+              <li>
+                <a href="https://github.com/gorgoyle-andi" target="_blank"
+                  ><img
+                    src="../icons/social/git-icon.png"
+                    height="36"
+                    alt="git"
+                /></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/andrew-gorman-2153bb211/"
+                  target="_blank"
+                  ><img
+                    src="../icons/social/linkedin-icon-2.png"
+                    height="36"
+                    alt="linkedin"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- CONTACT INFO -->
+        <div class="sec contact">
+          <h3>Contact Info</h3>
+          <ul class="info">
+            <li>
+              <a href="mailto:adornwarngem@gmail.com" target="_blank">Email</a>
+            </li>
+            <li>
+              <a href="mailto:andrewgorman@hotmail.co.uk" target="_blank"
+                >Email (for Tuition following English Curriculum)</a
+              >
+            </li>
+            <li>Tel: +43(0)6602603157</li>
+            <li>
+              <a
+                href="https://www.keystonetutors.com/tutors/294-andrew"
+                target="_blank"
+                >Keystone Tutor Profile</a
+              >
+            </li>
+            <li>
+              <img
+                src="../images/me-pics/Keystone-portrait-2021.jpg"
+                height="88"
+                alt="Keystone-portrait-2021"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="copyrightText">
+      <p>Don't learn to play. Play to learn.</p>
+      <p>© 2021 Andrew Gorman</p>
+    </div>
+    <!-- SCRIPT -->
+    <!-- NAV TRANSITION-->
+    <script src="../js/nav-script.js"></script>
+    <!-- Film Audio + Video Players -->
+    <script src="../js/film-script.js"></script>
+  </body>
+</html>

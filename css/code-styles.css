@@ -1,0 +1,15 @@
+@font-face {
+  font-family: ubuntu;
+  src: url("../../fonts/ubuntu-font-family-0.80/Ubuntu-L.ttf");
+}
+
+#coming-soon {
+  font-family: ubuntu;
+  font-size: 1.2em;
+  padding: 0.5em;
+  background-color: rgb(233, 214, 214);
+}
+
+#coming-soon a:hover {
+  color: blueviolet;
+}

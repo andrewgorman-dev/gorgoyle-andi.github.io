@@ -1,0 +1,78 @@
+* {
+  font-family: ubuntu;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(231, 211, 173);
+}
+
+@media all and (min-width: 768px) {
+  .friend-container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .box {
+    width: 33vw;
+  }
+}
+
+.friend-container {
+  padding: 0.2em;
+}
+
+.friend-container p {
+  text-align: justify;
+  padding: 0.9em;
+}
+
+.friend-container .box {
+  text-align: center;
+  border: 1px #ccc solid;
+  border-radius: 0.5rem;
+  background-image: linear-gradient(rgb(133, 150, 137), rgb(223, 240, 240));
+}
+
+.friend-container div {
+  padding: 1em;
+}
+
+.friend-container a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.friend-container a:hover {
+  color: rgb(222, 206, 238);
+}
+.friend-container .img-container {
+  margin: 0.8em auto;
+  text-align: center;
+  height: 8rem;
+}
+
+.friend-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.friend-container img:hover {
+  transform: scale(1.1);
+}
+
+#button {
+  /* background-color: rgb(99, 167, 167); */
+  padding: 0.6rem;
+  border-radius: 6px;
+  box-shadow: 2px 3px 6px rgb(61, 100, 98);
+}
+
+#button:hover {
+  cursor: pointer;
+  background-color: rgb(187, 183, 183);
+}

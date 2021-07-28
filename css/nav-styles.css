@@ -1,0 +1,151 @@
+@font-face {
+  font-family: "ubuntu";
+  src: url("../fonts/ubuntu-font-family-0.80/Ubuntu-L.ttf");
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* .site-wrapper {
+  overflow-x: hidden;
+} */
+
+/* Does this work with img-darken grid since applied to all with * ??? 
+Font-Fam here or in nav only? */
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background-color: #e7c9b1;
+  font-family: ubuntu;
+  z-index: 1;
+  overflow-x: hidden;
+}
+/* 1vh = 1% of viewport see also vw vmax vmin */
+
+.logo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #292236;
+  letter-spacing: 4px;
+  font-size: 18px;
+}
+
+.logo-text {
+  text-align: center;
+}
+
+.logo img {
+  padding: 0.4em;
+}
+
+.logo p {
+  font-size: 8.5px;
+  text-align: center;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 68%;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: #194855;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: rgb(168, 21, 187);
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 26px;
+  height: 2px;
+  background-color: aliceblue;
+  margin: 5px;
+  transition: all 0.4s ease;
+}
+
+@media all and (max-width: 1024px) {
+  .nav-links {
+    width: 70vw;
+  }
+}
+
+/* OVERFLOW hidden hides footer!! scroll looks shit, auto seems cool */
+@media all and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  /* TRIED THIS SOLUTION ON Soliloquy page only */
+
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    min-height: 90vh;
+    top: 10vh;
+    background-color: #e7c9b1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    z-index: 15;
+    overflow-x: hidden;
+  }
+  /* z-index was the fix for side-nav animation Wuhuuu!! */
+
+  .nav-links li {
+    opacity: 0;
+  }
+  .burger {
+    display: block;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+/* @keyframes rule specifies animation code: transitions between one set of CSS styles to another */
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(90deg) translate(7px, 7px);
+}
+
+.toggle .line2 {
+  transform: rotate(90deg);
+}
+
+.toggle .line3 {
+  transform: rotate(90deg) translate(-7px, -7px);
+}
