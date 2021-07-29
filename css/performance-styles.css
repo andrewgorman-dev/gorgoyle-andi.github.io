@@ -82,7 +82,7 @@ body {
   margin: 5.6em auto;
   width: 62%;
   height: 40%;
-  border-radius: 8%;
+  border-radius: 6px;
   background-image: linear-gradient(180deg, #90b3a7 23.8%, #599e8f 92%);
   box-shadow: 5px 5px 11px #a8c5c3, -5px -5px 11px #b6ccc6;
   text-align: center;
