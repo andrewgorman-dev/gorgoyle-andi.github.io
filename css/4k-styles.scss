@@ -1,29 +1,43 @@
 * {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
-body {
+html body {
   font-family: ubuntu;
   background-image: url("../../images/4k-images/4k-background.JPG");
   background-position: center;
+  overflow-x: hidden !important;
 }
+
 // Media Query
 @media all and (max-width: 768px) {
+  body {
+    background-position: top;
+    overflow-x: hidden !important;
+  }
+
   .header-text {
-    max-width: 50%;
+    max-width: 64%;
     margin: 0.6rem auto;
+    padding: 1rem;
     color: rgb(65, 27, 27);
     background-color: #d7c7dd;
     border-radius: 0.4rem;
     opacity: 0.9;
     font-size: 1rem;
   }
+
+  .header-text h1 {
+    font-size: large;
+  }
+
   .level {
     min-width: 90%;
   }
   #title {
-    max-width: 40%;
+    min-width: 68%;
   }
 
   .audio-container .buttons {
@@ -51,6 +65,7 @@ body {
     font-family: ubuntu;
     background-image: url("../../images/4k-images/4k-background.JPG");
     background-position: top;
+    overflow-x: hidden;
   }
 }
 
@@ -139,12 +154,6 @@ body {
   opacity: 1;
 }
 
-// .audio-container .buttons img:active {
-//   background-color: rgb(192, 202, 212);
-//   border-radius: 25%;
-//   box-shadow: 2px 2px 6px #737a7a, -2px -2px 6px #3e4442;
-// }
-
 // *********** 4K STORY STYLES *****************
 .four-header {
   background-image: linear-gradient(
@@ -153,7 +162,7 @@ body {
     rgb(143, 126, 126) 87.5%
   );
   height: 84px;
-  padding: 28px;
+  padding: 1rem;
   text-align: center;
   color: rgb(4, 22, 37);
   align-items: center;
@@ -162,6 +171,8 @@ body {
 
 .four-header h1 {
   text-shadow: 0rem 0.1rem 0.5rem rgba(0, 0, 0, 0.5);
+  font-size: larger;
+  padding: 1rem;
 }
 
 .four-story-container {
@@ -192,6 +203,9 @@ section img {
 }
 // Ballad Media Query
 @media only screen and (min-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
   .four-story-container {
     padding: 0.5em;
   }

@@ -1,29 +1,39 @@
 * {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
-body {
+html body {
   font-family: ubuntu;
   background-image: url("../../images/4k-images/4k-background.JPG");
   background-position: center;
+  overflow-x: hidden !important;
 }
 
 @media all and (max-width: 768px) {
+  body {
+    background-position: top;
+    overflow-x: hidden !important;
+  }
   .header-text {
-    max-width: 50%;
+    max-width: 64%;
     margin: 0.6rem auto;
+    padding: 1rem;
     color: #411b1b;
     background-color: #d7c7dd;
     border-radius: 0.4rem;
     opacity: 0.9;
     font-size: 1rem;
   }
+  .header-text h1 {
+    font-size: large;
+  }
   .level {
     min-width: 90%;
   }
   #title {
-    max-width: 40%;
+    min-width: 68%;
   }
   .audio-container .buttons {
     min-width: 92%;
@@ -54,6 +64,7 @@ body {
     font-family: ubuntu;
     background-image: url("../../images/4k-images/4k-background.JPG");
     background-position: top;
+    overflow-x: hidden;
   }
 }
 
@@ -156,7 +167,7 @@ body {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(18%, #e3e3ee), color-stop(87.5%, #8f7e7e));
   background-image: linear-gradient(180deg, #e3e3ee 18%, #8f7e7e 87.5%);
   height: 84px;
-  padding: 28px;
+  padding: 1rem;
   text-align: center;
   color: #041625;
   -webkit-box-align: center;
@@ -167,6 +178,8 @@ body {
 
 .four-header h1 {
   text-shadow: 0rem 0.1rem 0.5rem rgba(0, 0, 0, 0.5);
+  font-size: larger;
+  padding: 1rem;
 }
 
 .four-story-container {
@@ -197,6 +210,9 @@ section img {
 }
 
 @media only screen and (min-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
   .four-story-container {
     padding: 0.5em;
   }
