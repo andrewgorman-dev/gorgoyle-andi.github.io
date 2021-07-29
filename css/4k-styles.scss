@@ -3,18 +3,14 @@
   padding: 0;
 }
 
-html body {
+body {
   font-family: ubuntu;
   background-image: url("../../images/4k-images/4k-background.JPG");
-  background-position: center;
-  overflow-x: hidden !important;
 }
-
 // Media Query
 @media all and (max-width: 768px) {
   body {
     background-position: top;
-    overflow-x: hidden !important;
   }
 
   .header-text {
@@ -61,10 +57,7 @@ html body {
 
 @media all and (min-width: 1680px) {
   body {
-    font-family: ubuntu;
-    background-image: url("../../images/4k-images/4k-background.JPG");
     background-position: top;
-    overflow-x: hidden;
   }
 }
 
@@ -157,7 +150,7 @@ html body {
 .four-header {
   background-image: linear-gradient(
     180deg,
-    #f3f3fe 18%,
+    #f3f3fa 18%,
     rgb(143, 126, 126) 87.5%
   );
   height: 84px;
@@ -202,9 +195,6 @@ section img {
 }
 // Ballad Media Query
 @media only screen and (min-width: 768px) {
-  body {
-    overflow-x: hidden;
-  }
   .four-story-container {
     padding: 0.5em;
   }
