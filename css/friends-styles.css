@@ -11,8 +11,8 @@ body {
 
 @media all and (min-width: 768px) {
   .friend-container {
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .box {
