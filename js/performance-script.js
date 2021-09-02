@@ -11,7 +11,7 @@ let duration = 0;
 let currentTime = 0;
 
 // Set up Playlist - Load Songs
-let songs = ["The Box You're Not In", "Moanin' (Bobby Timmons)", "Mimosa (H Winterstein)", "Googlin' (Horace Silver arr Andrew Gorman)"];
+let songs = ["The Box You're Not In", "Moanin' (Bobby Timmons)", "Mimosa (H Winterstein)", "Blues en Mineur", "Googlin' (Horace Silver arr Andrew Gorman)"];
 let songIndex = 3;
 window.onload = loadSong(songs[songIndex]);
 
