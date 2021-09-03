@@ -52,7 +52,7 @@ function playSong() {
             audio.pause();
             isPlaying = false;
             range.value = 0;
-            playButton.src = "../../icons/play-icon-color-orange.png";
+            playButton.src = "../../icons/play-icon-color-orange-scaled.png";
         })
 }
 
